@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{46CA6127-FDA7-48F6-B6A9-DCDF965374E6}</ProjectGuid>
+    <ProjectGuid>{E0FB9645-DF40-4B67-B143-38BE55C643D2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>LoginApp</RootNamespace>
-    <AssemblyName>LoginApp</AssemblyName>
+    <RootNamespace>OpenFileDigApp</RootNamespace>
+    <AssemblyName>OpenFileDigApp</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

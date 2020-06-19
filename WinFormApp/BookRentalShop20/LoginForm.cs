@@ -67,29 +67,49 @@ namespace BookRentalShop20
                 return;
             }
             string strUserId = string.Empty;
-            using (SqlConnection conn = new SqlConnection(strConnString)) //ip 보면 서울에 있는지 대구에 있는지 알수 있다. 접속할려면 아이디 페스워드 
+            try
             {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-                cmd.CommandText = "SELECT userID FROM userTBL  " +                 //SQL 구문을 가져 와서 넣을 때는 꼭 구문 사이사이를 띄워줘야 한다.
-                                  "  WHERE userID = @userID " +                   //SQL구문을 가져 와서 넣는다.
-                                  "  AND password = @password";                  //사용자가 사용 하면 바로 진행되는 !
-               //////////////////////////////////////////////////////////////////// ID
-                SqlParameter parmUserId = new SqlParameter("@userID", SqlDbType.VarChar, 12);                                                //CommandText 를  파라미터
-                parmUserId.Value = TxtUserID.Text;
-                cmd.Parameters.Add(parmUserId);
-                ///////////////////////////////////////////////////////////////// PASSWORD
-                SqlParameter parPassword = new SqlParameter("@password", SqlDbType.VarChar, 12);                                              //CommandText 를  파라미터
-                parPassword.Value = TxtPassword.Text;
-                cmd.Parameters.Add(parPassword);
-                SqlDataReader reader = cmd.ExecuteReader();
-                reader.Read();
-                strUserId = reader["userID"].ToString();
+                using (SqlConnection conn = new SqlConnection(strConnString)) //ip 보면 서울에 있는지 대구에 있는지 알수 있다. 접속할려면 아이디 페스워드 
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = conn;
+                    cmd.CommandText = "SELECT userID FROM userTBL  " +                 //SQL 구문을 가져 와서 넣을 때는 꼭 구문 사이사이를 띄워줘야 한다.
+                                      "  WHERE userID = @userID " +                   //SQL구문을 가져 와서 넣는다.
+                                      "  AND password = @password";                  //사용자가 사용 하면 바로 진행되는 !
+                                                                                     //////////////////////////////////////////////////////////////////// ID
+                    SqlParameter parmUserId = new SqlParameter("@userID", SqlDbType.VarChar, 12);                                                //CommandText 를  파라미터
+                    parmUserId.Value = TxtUserID.Text;
+                    cmd.Parameters.Add(parmUserId);
+                    ///////////////////////////////////////////////////////////////// PASSWORD
+                    SqlParameter parPassword = new SqlParameter("@password", SqlDbType.VarChar, 12);                                              //CommandText 를  파라미터
+                    parPassword.Value = TxtPassword.Text;
+                    cmd.Parameters.Add(parPassword);
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    reader.Read();
+                    strUserId = reader["userID"] != null ? reader["userID"].ToString() : "";  //여기 구문이 문제 인데 여기를 못잡겠으면
 
-                MetroMessageBox.Show(this, "접속성공", " 로그인");
-                Debug.WriteLine("On the Debug");
+                    if (strUserId != "")
+                    {
+                        MetroMessageBox.Show(this, "접속성공", " 로그인");
+                        this.Close();
+                    }
+                    else
+                    {
+                        MetroMessageBox.Show(this, "접속실패", " 로그인실패", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+
+                    //MetroMessageBox.Show(this, "접속성공", " 로그인");
+                    //Debug.WriteLine("On the Debug");
+                }
             }
+            catch (Exception ex)
+            {
+
+                MetroMessageBox.Show(this, $"Error : {ex.StackTrace}", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            
         }
     }
 }

@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework;
 using MetroFramework.Forms;
@@ -91,6 +84,7 @@ namespace BookRentalShop20
 
                     if (strUserId != "")
                     {
+                        Commons.LOGINUSERID = strUserId; //자식에서 부모한테 데이터를 보내는게 어렵다 //자식한테서 데이터를받는다.
                         MetroMessageBox.Show(this, "접속성공", " 로그인");
                         this.Close();
                     }

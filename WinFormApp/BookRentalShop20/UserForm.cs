@@ -15,7 +15,7 @@ namespace BookRentalShop20
 {
     public partial class UserForm : MetroForm
     {
-        string strConnString = "Data Source=192.168.0.28;Initial Catalog=BookRentalshopDB;Persist Security Info=True;User ID=sa;Password=p@ssw0rd!";
+        
         string mode = "";
         public UserForm()
         {
@@ -31,7 +31,7 @@ namespace BookRentalShop20
         /// </summary>
         private void UpdateData()
         {
-            using (SqlConnection conn = new SqlConnection(strConnString))
+            using (SqlConnection conn = new SqlConnection(Commons.CONNSTRING))
             {
                 conn.Open(); // Db 열기
                 string strQuery = "SELECT id,userID,password,lastLoginDt,loginIpAddr" +
@@ -122,7 +122,7 @@ namespace BookRentalShop20
                 MetroMessageBox.Show(this, "신규버튼을 누르고 데이터를 저장하십시오","경고",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 return;
             }
-            using (SqlConnection conn = new SqlConnection(strConnString))
+            using (SqlConnection conn = new SqlConnection(Commons.CONNSTRING))
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();
@@ -144,11 +144,11 @@ namespace BookRentalShop20
                     cmd.CommandText = strQuery;
                 }
                 ////////////////////////////////////////////////////////////////userid
-                SqlParameter parmUserID = new SqlParameter("@UserID", SqlDbType.VarChar, 12);                                                //CommandText 를  파라미터
+                SqlParameter parmUserID = new SqlParameter("@UserID", SqlDbType.VarChar, 12);                                       //CommandText 를  파라미터
                 parmUserID.Value = TxtUserID.Text;
                 cmd.Parameters.Add(parmUserID);
                 ///////////////////////////////////////////////////////////////// password
-                SqlParameter parmPassword = new SqlParameter("@Password", SqlDbType.VarChar, 20);                                                //CommandText 를  파라미터
+                SqlParameter parmPassword = new SqlParameter("@Password", SqlDbType.VarChar, 20);                                  //CommandText 를  파라미터
                 parmPassword.Value = TxtPassword.Text;
                 cmd.Parameters.Add(parmPassword);
                 ///////////////////////////////////////////////////////////////// id
@@ -183,7 +183,7 @@ namespace BookRentalShop20
 
         private void DeletProcess()
         {
-            using (SqlConnection coon = new SqlConnection(strConnString))
+            using (SqlConnection coon = new SqlConnection(Commons.CONNSTRING))
             {
                 coon.Open();
                 SqlCommand cmd = new SqlCommand();

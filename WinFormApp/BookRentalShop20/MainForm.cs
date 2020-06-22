@@ -68,5 +68,22 @@ namespace BookRentalShop20
             UserForm form = new UserForm();
             InItChildForm( form, "사용자 관리");
         }
+
+        private void 회원관리MToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MemberForm form = new MemberForm();
+            InItChildForm(form, "회원 관리");
+        }
+
+        private void MainForm_Activated(object sender, EventArgs e)
+        {
+            LblUserID.Text = Commons.LOGINUSERID;
+        }
+
+        private void 책관리BToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BooksForm form = new BooksForm();
+            InItChildForm(form, "책 관리");
+        }
     }
 }

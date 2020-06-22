@@ -15,7 +15,7 @@ namespace BookRentalShop20
 {
     public partial class DivForm : MetroForm
     {
-        string strConnString = "Data Source=192.168.0.28;Initial Catalog=BookRentalshopDB;Persist Security Info=True;User ID=sa;Password=p@ssw0rd!";
+        //링크 지워버림
         string mode = "";
         public DivForm()
         {
@@ -29,7 +29,7 @@ namespace BookRentalShop20
 
         private void UpdateData()
         {
-            using (SqlConnection conn = new SqlConnection(strConnString))
+            using (SqlConnection conn = new SqlConnection(Commons.CONNSTRING)) //여기서 변수명을 바꿔서 여기서 링크 한다.
             {
                 conn.Open(); // Db 열기
                 string strQuery = "SELECT Division, Names FROM divtbl";
@@ -96,7 +96,8 @@ namespace BookRentalShop20
                 MetroMessageBox.Show(this, "신규버튼을 누르고 데이터를 저장하십시오","경고",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 return;
             }
-            using (SqlConnection conn = new SqlConnection(strConnString))
+            using (SqlConnection conn = new SqlConnection(Commons.CONNSTRING))//다른 창에 STATIC 문으로 작성하여  연결하는 방법 만약 링크를 바꿔야하면 창을 모두 다 열어서 
+                                                                              //바꿔야하는데 이렇게 코딩을 하면 해당 창에만 링크 주소를 바꾸면 모두 다 적용된다. 
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();
@@ -130,7 +131,7 @@ namespace BookRentalShop20
 
         private void TxtNames_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(e.KeyChar == 13)
+            if(e.KeyChar == 13) 
             {
                 BtnSave_Click(sender, new EventArgs());
             }
@@ -151,7 +152,8 @@ namespace BookRentalShop20
 
         private void DeletProcess()
         {
-            using (SqlConnection coon = new SqlConnection(strConnString))
+            using (SqlConnection coon = new SqlConnection(Commons.CONNSTRING))//다른 창에 STATIC 문으로 작성하여  연결하는 방법 만약 링크를 바꿔야하면 창을 모두 다 열어서 
+                                                                              //바꿔야하는데 이렇게 코딩을 하면 해당 창에만 링크 주소를 바꾸면 모두 다 적용된다. 
             {
                 coon.Open();
                 SqlCommand cmd = new SqlCommand();

@@ -13,7 +13,7 @@ namespace BookRentalShop20
         public LoginForm()
         {
             InitializeComponent();
-        }
+        }     
         /// <summary>
         /// 캔슬버튼 클릭이벤트
         /// </summary>
@@ -84,7 +84,7 @@ namespace BookRentalShop20
 
                     if (strUserId != "")
                     {
-                        Commons.LOGINUSERID = strUserId; //자식에서 부모한테 데이터를 보내는게 어렵다 //자식한테서 데이터를받는다.
+                        Commons.LOGINUSERID = strUserId; //자식에서 부모한테 데이터를 보내는게 어렵다 //자식한테서 데이터를받는다.  
                         MetroMessageBox.Show(this, "접속성공", " 로그인");
                         this.Close();
                     }

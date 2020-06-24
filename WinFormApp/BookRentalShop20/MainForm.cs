@@ -21,7 +21,7 @@ namespace BookRentalShop20
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            LoginForm loginForm = new LoginForm();
+            LoginForm loginForm = new LoginForm(); 
             loginForm.ShowDialog();
         }
         /// <summary>
@@ -84,6 +84,12 @@ namespace BookRentalShop20
         {
             BooksForm form = new BooksForm();
             InItChildForm(form, "책 관리");
+        }
+
+        private void 책대여관리RToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RentalForm form = new RentalForm();
+            InItChildForm(form, "책 대여 관리");
         }
     }
 }

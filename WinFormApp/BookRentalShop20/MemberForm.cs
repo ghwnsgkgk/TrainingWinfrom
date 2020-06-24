@@ -210,5 +210,10 @@ namespace BookRentalShop20
         {
             UpdateData(); // 데이터그리드DB 데이터 로딩하기
         }
+
+        private void CboLevels_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

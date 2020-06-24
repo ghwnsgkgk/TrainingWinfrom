@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.GrdDivTbl = new MetroFramework.Controls.MetroGrid();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.TxtDvision = new MetroFramework.Controls.MetroTextBox();
-            this.TxtNames = new MetroFramework.Controls.MetroTextBox();
-            this.BtnDelet = new MetroFramework.Controls.MetroButton();
-            this.BtnNew = new MetroFramework.Controls.MetroButton();
-            this.BtnSave = new MetroFramework.Controls.MetroButton();
             this.BtnCancel = new MetroFramework.Controls.MetroButton();
+            this.BtnSave = new MetroFramework.Controls.MetroButton();
+            this.BtnNew = new MetroFramework.Controls.MetroButton();
+            this.BtnDelet = new MetroFramework.Controls.MetroButton();
+            this.TxtNames = new MetroFramework.Controls.MetroTextBox();
+            this.TxtDvision = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -69,6 +69,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.metroLabel2);
             this.splitContainer1.Panel2.Controls.Add(this.metroLabel1);
             this.splitContainer1.Panel2.ForeColor = System.Drawing.SystemColors.Control;
+            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(1025, 542);
             this.splitContainer1.SplitterDistance = 500;
             this.splitContainer1.TabIndex = 0;
@@ -82,23 +83,23 @@
             this.GrdDivTbl.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GrdDivTbl.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.GrdDivTbl.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GrdDivTbl.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GrdDivTbl.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.GrdDivTbl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GrdDivTbl.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GrdDivTbl.DefaultCellStyle = dataGridViewCellStyle2;
             this.GrdDivTbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GrdDivTbl.EnableHeadersVisualStyles = false;
             this.GrdDivTbl.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -107,14 +108,14 @@
             this.GrdDivTbl.Name = "GrdDivTbl";
             this.GrdDivTbl.ReadOnly = true;
             this.GrdDivTbl.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GrdDivTbl.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GrdDivTbl.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.GrdDivTbl.RowHeadersWidth = 51;
             this.GrdDivTbl.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GrdDivTbl.RowTemplate.Height = 27;
@@ -124,55 +125,44 @@
             this.GrdDivTbl.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrdDivTbl_CellClick);
             this.GrdDivTbl.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrdDivTbl_CellContentClick);
             // 
-            // metroLabel1
+            // BtnCancel
             // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(50, 46);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(69, 20);
-            this.metroLabel1.TabIndex = 0;
-            this.metroLabel1.Text = "구분코드";
-            this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCancel.Location = new System.Drawing.Point(366, 210);
+            this.BtnCancel.Name = "BtnCancel";
+            this.BtnCancel.Size = new System.Drawing.Size(91, 23);
+            this.BtnCancel.TabIndex = 5;
+            this.BtnCancel.Text = "취소";
+            this.BtnCancel.UseSelectable = true;
             // 
-            // metroLabel2
+            // BtnSave
             // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(50, 89);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(39, 20);
-            this.metroLabel2.TabIndex = 0;
-            this.metroLabel2.Text = "이름";
-            this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnSave.Location = new System.Drawing.Point(264, 210);
+            this.BtnSave.Name = "BtnSave";
+            this.BtnSave.Size = new System.Drawing.Size(96, 23);
+            this.BtnSave.TabIndex = 4;
+            this.BtnSave.Text = "저장";
+            this.BtnSave.UseSelectable = true;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
-            // TxtDvision
+            // BtnNew
             // 
+            this.BtnNew.Location = new System.Drawing.Point(166, 210);
+            this.BtnNew.Name = "BtnNew";
+            this.BtnNew.Size = new System.Drawing.Size(92, 23);
+            this.BtnNew.TabIndex = 3;
+            this.BtnNew.Text = "신규";
+            this.BtnNew.UseSelectable = true;
+            this.BtnNew.Click += new System.EventHandler(this.BtnNew_Click);
             // 
+            // BtnDelet
             // 
-            // 
-            this.TxtDvision.CustomButton.Image = null;
-            this.TxtDvision.CustomButton.Location = new System.Drawing.Point(250, 1);
-            this.TxtDvision.CustomButton.Name = "";
-            this.TxtDvision.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.TxtDvision.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.TxtDvision.CustomButton.TabIndex = 1;
-            this.TxtDvision.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.TxtDvision.CustomButton.UseSelectable = true;
-            this.TxtDvision.CustomButton.Visible = false;
-            this.TxtDvision.Lines = new string[0];
-            this.TxtDvision.Location = new System.Drawing.Point(141, 43);
-            this.TxtDvision.MaxLength = 4;
-            this.TxtDvision.Name = "TxtDvision";
-            this.TxtDvision.PasswordChar = '\0';
-            this.TxtDvision.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TxtDvision.SelectedText = "";
-            this.TxtDvision.SelectionLength = 0;
-            this.TxtDvision.SelectionStart = 0;
-            this.TxtDvision.ShortcutsEnabled = true;
-            this.TxtDvision.Size = new System.Drawing.Size(272, 23);
-            this.TxtDvision.TabIndex = 0;
-            this.TxtDvision.UseSelectable = true;
-            this.TxtDvision.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.TxtDvision.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.BtnDelet.Location = new System.Drawing.Point(71, 210);
+            this.BtnDelet.Name = "BtnDelet";
+            this.BtnDelet.Size = new System.Drawing.Size(89, 23);
+            this.BtnDelet.TabIndex = 2;
+            this.BtnDelet.Text = "삭제";
+            this.BtnDelet.UseSelectable = true;
+            this.BtnDelet.Click += new System.EventHandler(this.BtnDelet_Click);
             // 
             // TxtNames
             // 
@@ -205,44 +195,55 @@
             this.TxtNames.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.TxtNames.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNames_KeyPress);
             // 
-            // BtnDelet
+            // TxtDvision
             // 
-            this.BtnDelet.Location = new System.Drawing.Point(71, 210);
-            this.BtnDelet.Name = "BtnDelet";
-            this.BtnDelet.Size = new System.Drawing.Size(89, 23);
-            this.BtnDelet.TabIndex = 2;
-            this.BtnDelet.Text = "삭제";
-            this.BtnDelet.UseSelectable = true;
-            this.BtnDelet.Click += new System.EventHandler(this.BtnDelet_Click);
             // 
-            // BtnNew
             // 
-            this.BtnNew.Location = new System.Drawing.Point(166, 210);
-            this.BtnNew.Name = "BtnNew";
-            this.BtnNew.Size = new System.Drawing.Size(92, 23);
-            this.BtnNew.TabIndex = 3;
-            this.BtnNew.Text = "신규";
-            this.BtnNew.UseSelectable = true;
-            this.BtnNew.Click += new System.EventHandler(this.BtnNew_Click);
             // 
-            // BtnSave
+            this.TxtDvision.CustomButton.Image = null;
+            this.TxtDvision.CustomButton.Location = new System.Drawing.Point(250, 1);
+            this.TxtDvision.CustomButton.Name = "";
+            this.TxtDvision.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.TxtDvision.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TxtDvision.CustomButton.TabIndex = 1;
+            this.TxtDvision.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.TxtDvision.CustomButton.UseSelectable = true;
+            this.TxtDvision.CustomButton.Visible = false;
+            this.TxtDvision.Lines = new string[0];
+            this.TxtDvision.Location = new System.Drawing.Point(141, 43);
+            this.TxtDvision.MaxLength = 4;
+            this.TxtDvision.Name = "TxtDvision";
+            this.TxtDvision.PasswordChar = '\0';
+            this.TxtDvision.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TxtDvision.SelectedText = "";
+            this.TxtDvision.SelectionLength = 0;
+            this.TxtDvision.SelectionStart = 0;
+            this.TxtDvision.ShortcutsEnabled = true;
+            this.TxtDvision.Size = new System.Drawing.Size(272, 23);
+            this.TxtDvision.TabIndex = 0;
+            this.TxtDvision.UseSelectable = true;
+            this.TxtDvision.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.TxtDvision.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            this.BtnSave.Location = new System.Drawing.Point(264, 210);
-            this.BtnSave.Name = "BtnSave";
-            this.BtnSave.Size = new System.Drawing.Size(96, 23);
-            this.BtnSave.TabIndex = 4;
-            this.BtnSave.Text = "저장";
-            this.BtnSave.UseSelectable = true;
-            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
+            // metroLabel2
             // 
-            // BtnCancel
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(50, 89);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(39, 20);
+            this.metroLabel2.TabIndex = 0;
+            this.metroLabel2.Text = "이름";
+            this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            this.BtnCancel.Location = new System.Drawing.Point(366, 210);
-            this.BtnCancel.Name = "BtnCancel";
-            this.BtnCancel.Size = new System.Drawing.Size(91, 23);
-            this.BtnCancel.TabIndex = 5;
-            this.BtnCancel.Text = "취소";
-            this.BtnCancel.UseSelectable = true;
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(50, 46);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(69, 20);
+            this.metroLabel1.TabIndex = 0;
+            this.metroLabel1.Text = "구분코드";
+            this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // DivForm
             // 

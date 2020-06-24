@@ -45,7 +45,7 @@ namespace BookRentalShop20
 
         private void GrdDivTbl_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+                
         }
 
         private void GrdDivTbl_CellClick(object sender, DataGridViewCellEventArgs e)  //꼭 CellClick
@@ -75,7 +75,7 @@ namespace BookRentalShop20
             {
                 MetroMessageBox.Show(this, "빈값은 저장할 수 없습니다.", "경고", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;  //이 리턴 값이 중요하다 ,@@
-            }
+            } 
             SaveProcess(); //DB저장프로세스
             UpdateData();
             ClearTextControls();
@@ -164,6 +164,11 @@ namespace BookRentalShop20
                 cmd.Parameters.Add(parameter);
                 cmd.ExecuteNonQuery(); // 이게 마지막으로 실행시켜주는 
             }
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

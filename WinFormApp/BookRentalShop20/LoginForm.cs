@@ -70,7 +70,7 @@ namespace BookRentalShop20
                     cmd.CommandText = "SELECT userID FROM userTBL  " +                 //SQL 구문을 가져 와서 넣을 때는 꼭 구문 사이사이를 띄워줘야 한다.
                                       "  WHERE userID = @userID " +                   //SQL구문을 가져 와서 넣는다.
                                       "  AND password = @password";                  //사용자가 사용 하면 바로 진행되는 !
-                                                                                     //////////////////////////////////////////////////////////////////// ID
+                    //////////////////////////////////////////////////////////////////// ID
                     SqlParameter parmUserId = new SqlParameter("@userID", SqlDbType.VarChar, 12);                                                //CommandText 를  파라미터
                     parmUserId.Value = TxtUserID.Text;
                     cmd.Parameters.Add(parmUserId);
@@ -104,6 +104,11 @@ namespace BookRentalShop20
                 return;
             }
             
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

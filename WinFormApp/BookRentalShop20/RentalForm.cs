@@ -22,16 +22,16 @@ namespace BookRentalShop20
         }
         private void UpdateDate()
         {
-            using (SqlConnection conn =new SqlConnection(strConnString))
+            using (SqlConnection conn = new SqlConnection(strConnString))
             {
                 conn.Open(); // Db 열기
                 string strQuery = "SELECT r.idx AS '순번', m.Idx AS '회원번호', " +
-                                  " b.Idx AS '책번호', "+
+                                  " b.Idx AS '책번호', " +
                                   " r.rentalDate AS '대여일', r.returnDate AS '반납일' " +
                                   " FROM rentaltbl AS r " +
-                                  " INNER JOIN membertbl AS m "+
+                                  " INNER JOIN membertbl AS m " +
                                   "  ON r.memberIdx = m.Idx " +
-                                  " INNER JOIN bookstbl AS b "+
+                                  " INNER JOIN bookstbl AS b " +
                                   "  ON r.bookIdx = b.Idx  " +
                                   " INNER JOIN divtbl AS t " +
                                   "   ON b.division = t.division ";
@@ -49,22 +49,9 @@ namespace BookRentalShop20
         {
             UpdateDate();
         }
-        private void ClearTextControls()
-        {
-            Txtidx.Text  = "";
-            CbbookIdx.SelectedIndex = -1; //이거 필수 레벨 설정하는거랑 관련해서 -1부터 시작!!!1
-            CbmemberIdx.SelectedIndex = -1; //이거 필수 레벨 설정하는거랑 관련해서 -1부터 시작!!!1
-            Txtidx.ReadOnly = true;
-            Txtidx.BackColor = Color.Beige;
+    
 
-            dateTimePickerrental.CustomFormat = " ";
-            dateTimePickerrental.Format = DateTimePickerFormat.Custom; // 값을 리셋해주는 방법
-            dateTimePickerreturn.CustomFormat = " ";
-            dateTimePickerreturn.Format = DateTimePickerFormat.Custom; // 값을 리셋해주는 방법
-
-            Txtidx.Focus();
-
-        }
+        
 
 
     }

@@ -89,7 +89,7 @@ namespace BookRentalShop20
             ClearTextControls();
         }
 
-        private void ClearTextControls()
+         private void ClearTextControls()
         {
             TxtIdx.Text = TxtNames.Text = TxtEmail.Text = TxtAddr.Text= TxtMobile.Text = "";
             CboLevels.SelectedIndex = -1; //이거 필수 레벨 설정하는거랑 관련해서 -1부터 시작!!!1

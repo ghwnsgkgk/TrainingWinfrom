@@ -28,17 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.GridBooksTbl = new MetroFramework.Controls.MetroGrid();
+            this.DtpReleaseDate = new System.Windows.Forms.DateTimePicker();
             this.CboNames = new System.Windows.Forms.ComboBox();
             this.BtnCancel = new MetroFramework.Controls.MetroButton();
             this.BtnSave = new MetroFramework.Controls.MetroButton();
             this.BtnNew = new MetroFramework.Controls.MetroButton();
             this.BtnDelet = new MetroFramework.Controls.MetroButton();
+            this.TxtPrice = new MetroFramework.Controls.MetroTextBox();
             this.TxtISBN = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.TxtNames = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.TxtAuthor = new MetroFramework.Controls.MetroTextBox();
@@ -48,9 +51,6 @@
             this.CboDivision = new MetroFramework.Controls.MetroLabel();
             this.lBLAuthor = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.DtpReleaseDate = new System.Windows.Forms.DateTimePicker();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.TxtPrice = new MetroFramework.Controls.MetroTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -102,23 +102,23 @@
             this.GridBooksTbl.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GridBooksTbl.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.GridBooksTbl.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridBooksTbl.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridBooksTbl.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.GridBooksTbl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GridBooksTbl.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GridBooksTbl.DefaultCellStyle = dataGridViewCellStyle2;
             this.GridBooksTbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GridBooksTbl.EnableHeadersVisualStyles = false;
             this.GridBooksTbl.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -127,14 +127,14 @@
             this.GridBooksTbl.Name = "GridBooksTbl";
             this.GridBooksTbl.ReadOnly = true;
             this.GridBooksTbl.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridBooksTbl.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridBooksTbl.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.GridBooksTbl.RowHeadersWidth = 51;
             this.GridBooksTbl.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GridBooksTbl.RowTemplate.Height = 27;
@@ -143,6 +143,14 @@
             this.GridBooksTbl.TabIndex = 0;
             this.GridBooksTbl.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrdDivTbl_CellClick);
             this.GridBooksTbl.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrdDivTbl_CellContentClick);
+            // 
+            // DtpReleaseDate
+            // 
+            this.DtpReleaseDate.Location = new System.Drawing.Point(138, 213);
+            this.DtpReleaseDate.Name = "DtpReleaseDate";
+            this.DtpReleaseDate.Size = new System.Drawing.Size(272, 25);
+            this.DtpReleaseDate.TabIndex = 4;
+            this.DtpReleaseDate.ValueChanged += new System.EventHandler(this.DtpReleaseDate_ValueChanged);
             // 
             // CboNames
             // 
@@ -161,6 +169,7 @@
             this.BtnCancel.TabIndex = 10;
             this.BtnCancel.Text = "취소";
             this.BtnCancel.UseSelectable = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // BtnSave
             // 
@@ -193,6 +202,39 @@
             this.BtnDelet.Visible = false;
             this.BtnDelet.Click += new System.EventHandler(this.BtnDelet_Click);
             // 
+            // TxtPrice
+            // 
+            // 
+            // 
+            // 
+            this.TxtPrice.CustomButton.Image = null;
+            this.TxtPrice.CustomButton.Location = new System.Drawing.Point(250, 1);
+            this.TxtPrice.CustomButton.Name = "";
+            this.TxtPrice.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.TxtPrice.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TxtPrice.CustomButton.TabIndex = 1;
+            this.TxtPrice.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.TxtPrice.CustomButton.UseSelectable = true;
+            this.TxtPrice.CustomButton.Visible = false;
+            this.TxtPrice.Lines = new string[0];
+            this.TxtPrice.Location = new System.Drawing.Point(138, 307);
+            this.TxtPrice.MaxLength = 50;
+            this.TxtPrice.Name = "TxtPrice";
+            this.TxtPrice.PasswordChar = '\0';
+            this.TxtPrice.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TxtPrice.SelectedText = "";
+            this.TxtPrice.SelectionLength = 0;
+            this.TxtPrice.SelectionStart = 0;
+            this.TxtPrice.ShortcutsEnabled = true;
+            this.TxtPrice.Size = new System.Drawing.Size(272, 23);
+            this.TxtPrice.TabIndex = 6;
+            this.TxtPrice.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.TxtPrice.UseSelectable = true;
+            this.TxtPrice.UseStyleColors = true;
+            this.TxtPrice.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.TxtPrice.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNames_KeyPress);
+            // 
             // TxtISBN
             // 
             // 
@@ -223,6 +265,16 @@
             this.TxtISBN.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtISBN.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.TxtISBN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNames_KeyPress);
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(47, 310);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(39, 20);
+            this.metroLabel2.TabIndex = 0;
+            this.metroLabel2.Text = "가격";
+            this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // TxtNames
             // 
@@ -375,57 +427,6 @@
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "순번";
             this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // DtpReleaseDate
-            // 
-            this.DtpReleaseDate.Location = new System.Drawing.Point(138, 213);
-            this.DtpReleaseDate.Name = "DtpReleaseDate";
-            this.DtpReleaseDate.Size = new System.Drawing.Size(272, 25);
-            this.DtpReleaseDate.TabIndex = 4;
-            this.DtpReleaseDate.ValueChanged += new System.EventHandler(this.DtpReleaseDate_ValueChanged);
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(47, 310);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(39, 20);
-            this.metroLabel2.TabIndex = 0;
-            this.metroLabel2.Text = "가격";
-            this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // TxtPrice
-            // 
-            // 
-            // 
-            // 
-            this.TxtPrice.CustomButton.Image = null;
-            this.TxtPrice.CustomButton.Location = new System.Drawing.Point(250, 1);
-            this.TxtPrice.CustomButton.Name = "";
-            this.TxtPrice.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.TxtPrice.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.TxtPrice.CustomButton.TabIndex = 1;
-            this.TxtPrice.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.TxtPrice.CustomButton.UseSelectable = true;
-            this.TxtPrice.CustomButton.Visible = false;
-            this.TxtPrice.Lines = new string[0];
-            this.TxtPrice.Location = new System.Drawing.Point(138, 307);
-            this.TxtPrice.MaxLength = 50;
-            this.TxtPrice.Name = "TxtPrice";
-            this.TxtPrice.PasswordChar = '\0';
-            this.TxtPrice.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TxtPrice.SelectedText = "";
-            this.TxtPrice.SelectionLength = 0;
-            this.TxtPrice.SelectionStart = 0;
-            this.TxtPrice.ShortcutsEnabled = true;
-            this.TxtPrice.Size = new System.Drawing.Size(272, 23);
-            this.TxtPrice.TabIndex = 6;
-            this.TxtPrice.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.TxtPrice.UseSelectable = true;
-            this.TxtPrice.UseStyleColors = true;
-            this.TxtPrice.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.TxtPrice.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.TxtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNames_KeyPress);
             // 
             // BooksForm
             // 

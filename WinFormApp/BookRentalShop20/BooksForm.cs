@@ -74,7 +74,7 @@ namespace BookRentalShop20
 
                 DtpReleaseDate.Value = DateTime.Parse( data.Cells[5].Value.ToString());
                 TxtISBN.Text = data.Cells[6].Value.ToString();
-                TxtPrice.Text = data.Cells[7].Value.ToString();
+                TxtPrice.Text = data.Cells[7].Value.ToString();          
 
 
                 mode = "UPDATE"; //수정은 UPDATE
@@ -274,6 +274,11 @@ namespace BookRentalShop20
         }
 
         private void TxtAuthor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCancel_Click(object sender, EventArgs e)
         {
 
         }

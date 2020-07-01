@@ -56,5 +56,17 @@ namespace MiniProject
             EmployeeForm form = new EmployeeForm();
             InItChildForm(form, "사원관리");
         }
+
+        private void ClientManaged_Click(object sender, EventArgs e)
+        {
+            //ClientForm form = new ClientForm();
+            //InItChildForm(form, "거래처관리");
+        }
+
+        private void ClientManaged_Click_1(object sender, EventArgs e)
+        {
+            ClientForm form = new ClientForm();
+            InItChildForm(form, "거래처관리");
+        }
     }
 }

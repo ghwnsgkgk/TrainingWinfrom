@@ -16,7 +16,7 @@ namespace MiniProject
 {
     public partial class LoginForm :MetroForm
     {
-        string strConnString = "Data Source=192.168.0.28;Initial Catalog=BookRentalshopDB;Persist Security Info=True;User ID=sa;Password=p@ssw0rd!";
+        //string strConnString = "Data Source=192.168.0.28;Initial Catalog=BookRentalshopDB;Persist Security Info=True;User ID=sa;Password=p@ssw0rd!";
         public LoginForm()
         {
             InitializeComponent();
@@ -61,12 +61,12 @@ namespace MiniProject
             string strUserid = string.Empty;//이부분도
             try
             {
-                using (SqlConnection conn = new SqlConnection(strConnString))
+                using (SqlConnection conn = new SqlConnection(Commons.ConnString))
                 {
                     conn.Open();
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = conn;
-                    cmd.CommandText = "SELECT userID FROM userTBL  " +
+                    cmd.CommandText = "SELECT userID FROM userTbl  " +
                                       "  WHERE userID = @userID    " +
                                       "  AND password = @password  ";
                     //id

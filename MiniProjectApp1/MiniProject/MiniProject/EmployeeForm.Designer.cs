@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label2 = new System.Windows.Forms.Label();
             this.GrdEmployeeTbl = new MetroFramework.Controls.MetroGrid();
@@ -40,7 +40,7 @@
             this.TxtDepart = new System.Windows.Forms.TextBox();
             this.TxtIdentityNumber = new System.Windows.Forms.TextBox();
             this.TxtName = new System.Windows.Forms.TextBox();
-            this.TxtmemberNumber = new System.Windows.Forms.TextBox();
+            this.Txtmemberidx = new System.Windows.Forms.TextBox();
             this.lblphoneNumber = new System.Windows.Forms.Label();
             this.lbllevel = new System.Windows.Forms.Label();
             this.lblcodeNumber = new System.Windows.Forms.Label();
@@ -48,6 +48,7 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblmemberNumber = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.BtnNew = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -68,13 +69,14 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.BtnNew);
             this.splitContainer1.Panel2.Controls.Add(this.BtnSave);
             this.splitContainer1.Panel2.Controls.Add(this.TxtPhoneNumber);
             this.splitContainer1.Panel2.Controls.Add(this.TxtRank);
             this.splitContainer1.Panel2.Controls.Add(this.TxtDepart);
             this.splitContainer1.Panel2.Controls.Add(this.TxtIdentityNumber);
             this.splitContainer1.Panel2.Controls.Add(this.TxtName);
-            this.splitContainer1.Panel2.Controls.Add(this.TxtmemberNumber);
+            this.splitContainer1.Panel2.Controls.Add(this.Txtmemberidx);
             this.splitContainer1.Panel2.Controls.Add(this.lblphoneNumber);
             this.splitContainer1.Panel2.Controls.Add(this.lbllevel);
             this.splitContainer1.Panel2.Controls.Add(this.lblcodeNumber);
@@ -105,23 +107,23 @@
             this.GrdEmployeeTbl.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GrdEmployeeTbl.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.GrdEmployeeTbl.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GrdEmployeeTbl.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GrdEmployeeTbl.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.GrdEmployeeTbl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GrdEmployeeTbl.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GrdEmployeeTbl.DefaultCellStyle = dataGridViewCellStyle11;
             this.GrdEmployeeTbl.EnableHeadersVisualStyles = false;
             this.GrdEmployeeTbl.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.GrdEmployeeTbl.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -129,14 +131,14 @@
             this.GrdEmployeeTbl.Name = "GrdEmployeeTbl";
             this.GrdEmployeeTbl.ReadOnly = true;
             this.GrdEmployeeTbl.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GrdEmployeeTbl.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GrdEmployeeTbl.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.GrdEmployeeTbl.RowHeadersWidth = 51;
             this.GrdEmployeeTbl.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GrdEmployeeTbl.RowTemplate.Height = 27;
@@ -147,10 +149,10 @@
             // 
             // BtnSave
             // 
-            this.BtnSave.Location = new System.Drawing.Point(52, 313);
+            this.BtnSave.Location = new System.Drawing.Point(156, 307);
             this.BtnSave.Name = "BtnSave";
-            this.BtnSave.Size = new System.Drawing.Size(156, 36);
-            this.BtnSave.TabIndex = 2;
+            this.BtnSave.Size = new System.Drawing.Size(77, 30);
+            this.BtnSave.TabIndex = 7;
             this.BtnSave.Text = "등록";
             this.BtnSave.UseVisualStyleBackColor = true;
             this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
@@ -160,42 +162,43 @@
             this.TxtPhoneNumber.Location = new System.Drawing.Point(77, 250);
             this.TxtPhoneNumber.Name = "TxtPhoneNumber";
             this.TxtPhoneNumber.Size = new System.Drawing.Size(156, 25);
-            this.TxtPhoneNumber.TabIndex = 1;
+            this.TxtPhoneNumber.TabIndex = 6;
             // 
             // TxtRank
             // 
             this.TxtRank.Location = new System.Drawing.Point(77, 211);
             this.TxtRank.Name = "TxtRank";
             this.TxtRank.Size = new System.Drawing.Size(156, 25);
-            this.TxtRank.TabIndex = 1;
+            this.TxtRank.TabIndex = 5;
             // 
             // TxtDepart
             // 
             this.TxtDepart.Location = new System.Drawing.Point(77, 172);
             this.TxtDepart.Name = "TxtDepart";
             this.TxtDepart.Size = new System.Drawing.Size(156, 25);
-            this.TxtDepart.TabIndex = 1;
+            this.TxtDepart.TabIndex = 4;
             // 
             // TxtIdentityNumber
             // 
             this.TxtIdentityNumber.Location = new System.Drawing.Point(77, 133);
             this.TxtIdentityNumber.Name = "TxtIdentityNumber";
             this.TxtIdentityNumber.Size = new System.Drawing.Size(156, 25);
-            this.TxtIdentityNumber.TabIndex = 1;
+            this.TxtIdentityNumber.TabIndex = 3;
             // 
             // TxtName
             // 
             this.TxtName.Location = new System.Drawing.Point(77, 94);
             this.TxtName.Name = "TxtName";
             this.TxtName.Size = new System.Drawing.Size(156, 25);
-            this.TxtName.TabIndex = 1;
+            this.TxtName.TabIndex = 2;
+            this.TxtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtName_KeyPress);
             // 
-            // TxtmemberNumber
+            // Txtmemberidx
             // 
-            this.TxtmemberNumber.Location = new System.Drawing.Point(77, 58);
-            this.TxtmemberNumber.Name = "TxtmemberNumber";
-            this.TxtmemberNumber.Size = new System.Drawing.Size(156, 25);
-            this.TxtmemberNumber.TabIndex = 1;
+            this.Txtmemberidx.Location = new System.Drawing.Point(77, 58);
+            this.Txtmemberidx.Name = "Txtmemberidx";
+            this.Txtmemberidx.Size = new System.Drawing.Size(156, 25);
+            this.Txtmemberidx.TabIndex = 1;
             // 
             // lblphoneNumber
             // 
@@ -254,11 +257,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 19);
+            this.label1.Location = new System.Drawing.Point(4, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "사원등록";
+            // 
+            // BtnNew
+            // 
+            this.BtnNew.Location = new System.Drawing.Point(73, 307);
+            this.BtnNew.Name = "BtnNew";
+            this.BtnNew.Size = new System.Drawing.Size(77, 30);
+            this.BtnNew.TabIndex = 7;
+            this.BtnNew.Text = "신규";
+            this.BtnNew.UseVisualStyleBackColor = true;
+            this.BtnNew.Click += new System.EventHandler(this.BtnNew_Click);
             // 
             // EmployeeForm
             // 
@@ -289,7 +302,7 @@
         private System.Windows.Forms.TextBox TxtDepart;
         private System.Windows.Forms.TextBox TxtIdentityNumber;
         private System.Windows.Forms.TextBox TxtName;
-        private System.Windows.Forms.TextBox TxtmemberNumber;
+        private System.Windows.Forms.TextBox Txtmemberidx;
         private System.Windows.Forms.Label lblphoneNumber;
         private System.Windows.Forms.Label lbllevel;
         private System.Windows.Forms.Label lblcodeNumber;
@@ -299,5 +312,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnSave;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button BtnNew;
     }
 }

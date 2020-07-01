@@ -95,6 +95,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(597, 396);
+            this.ControlBox = false;
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.TxtPassword);
@@ -103,6 +104,7 @@
             this.Controls.Add(this.label1);
             this.Name = "LoginForm";
             this.Text = "LoginForm";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

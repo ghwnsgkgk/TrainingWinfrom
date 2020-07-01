@@ -9,7 +9,7 @@ namespace BookRentalShop20
 {
     public partial class LoginForm :MetroForm
     {
-        string strConnString = "Data Source=192.168.0.28;Initial Catalog=BookRentalshopDB;Persist Security Info=True;User ID=sa;Password=p@ssw0rd!";
+        //string strConnString = "Data Source=192.168.0.28;Initial Catalog=BookRentalshopDB;Persist Security Info=True;User ID=sa;Password=p@ssw0rd!";
         public LoginForm()
         {
             InitializeComponent();
@@ -62,7 +62,7 @@ namespace BookRentalShop20
             string strUserId = string.Empty;
             try
             {
-                using (SqlConnection conn = new SqlConnection(strConnString)) //ip 보면 서울에 있는지 대구에 있는지 알수 있다. 접속할려면 아이디 페스워드 
+                using (SqlConnection conn = new SqlConnection(Commons.CONNSTRING)) //ip 보면 서울에 있는지 대구에 있는지 알수 있다. 접속할려면 아이디 페스워드 
                 {
                     conn.Open();
                     SqlCommand cmd = new SqlCommand();

@@ -125,7 +125,7 @@ namespace BookRentalShop20
                                 " Email = @Email " +
                                 " WHERE Idx = @Idx "; /// 띄어 쓰기 잘하기 
                 
-                    cmd.CommandText = strQuery; // 쿼리문을 실행 시키는 부분 !   
+                     // 쿼리문을 실행 시키는 부분 !   
                 }
                 else if (mode == "INSERT")
                 {
@@ -133,7 +133,7 @@ namespace BookRentalShop20
                                "      VALUES(@Names, @Levels, @Addr, @Mobile, @Email) ";
                 }
 
-                
+                cmd.CommandText = strQuery;
 
                 ////////////////////////////////////////////////////////////////names
                 SqlParameter parmNames = new SqlParameter("@Names", SqlDbType.NVarChar, 45);                                              //CommandText 를  파라미터

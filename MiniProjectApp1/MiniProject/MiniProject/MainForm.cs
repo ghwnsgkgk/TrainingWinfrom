@@ -68,5 +68,11 @@ namespace MiniProject
             ClientForm form = new ClientForm();
             InItChildForm(form, "거래처관리");
         }
+
+        private void BtnInOutPut_Click(object sender, EventArgs e)
+        {
+            InOutForm form = new InOutForm();
+            InItChildForm(form, "입.출관리");
+        }
     }
 }

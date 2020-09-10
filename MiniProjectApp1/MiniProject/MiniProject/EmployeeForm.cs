@@ -78,7 +78,7 @@ namespace MiniProject
                 TxtDepart.Text = data.Cells[3].Value.ToString();
                 TxtRank.Text = data.Cells[4].Value.ToString();
                 TxtPhoneNumber.Text = data.Cells[5].Value.ToString();
-
+                CboDepart.SelectedValue = data.Cells[3].Value;
                 mode = "UPDATE";
             }
         }
@@ -101,6 +101,7 @@ namespace MiniProject
             Txtmemberidx.ReadOnly = false;
             Txtmemberidx.BackColor = Color.White;
             TxtName.Focus();
+            CboDepart.SelectedIndex = -1;
         }
 
         private void SaveProcess()

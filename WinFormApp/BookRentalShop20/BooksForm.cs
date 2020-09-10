@@ -160,7 +160,7 @@ namespace BookRentalShop20
                 cmd.Parameters.Add(parmAuthor);
                 ///////////////////////////////////////////////////////////////// division
                 SqlParameter parmDivision = new SqlParameter("@Division", SqlDbType.Char, 4);                                                 //CommandText 를  파라미터
-                parmDivision.Value = CboNames.SelectedValue;  // 아이템즈가 맞음 !
+                parmDivision.Value = CboNames.SelectedValue;  
                 cmd.Parameters.Add(parmDivision);
                 //////////////////////////////////////////////////////////////////level
                 SqlParameter parmNames = new SqlParameter("@Names", SqlDbType.VarChar, 100);                                            //CommandText 를  파라미터

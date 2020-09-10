@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.MemberManaged = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnInOutPut = new System.Windows.Forms.Button();
             this.ClientManaged = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -47,14 +47,15 @@
             this.MemberManaged.UseVisualStyleBackColor = true;
             this.MemberManaged.Click += new System.EventHandler(this.MemberManaged_Click);
             // 
-            // button2
+            // BtnInOutPut
             // 
-            this.button2.Location = new System.Drawing.Point(243, 206);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 50);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "입고관리";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnInOutPut.Location = new System.Drawing.Point(243, 206);
+            this.BtnInOutPut.Name = "BtnInOutPut";
+            this.BtnInOutPut.Size = new System.Drawing.Size(100, 50);
+            this.BtnInOutPut.TabIndex = 0;
+            this.BtnInOutPut.Text = "입.출관리";
+            this.BtnInOutPut.UseVisualStyleBackColor = true;
+            this.BtnInOutPut.Click += new System.EventHandler(this.BtnInOutPut_Click);
             // 
             // ClientManaged
             // 
@@ -72,7 +73,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 50);
             this.button4.TabIndex = 0;
-            this.button4.Text = "출고관리";
+            this.button4.Text = "출고현황";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
@@ -112,7 +113,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.ClientManaged);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BtnInOutPut);
             this.Controls.Add(this.MemberManaged);
             this.Name = "MainForm";
             this.Text = " QR";
@@ -126,7 +127,7 @@
         #endregion
 
         private System.Windows.Forms.Button MemberManaged;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnInOutPut;
         private System.Windows.Forms.Button ClientManaged;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
